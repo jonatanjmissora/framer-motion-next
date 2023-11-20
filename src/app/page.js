@@ -1,6 +1,7 @@
 import Descripcion from "./components/Descripcion"
 import FirstBlock from "./components/FirstBlock"
 import FourthBlock from "./components/FourthBlock"
+import FifthBlock from "./components/FifthBlock"
 import Hero from "./components/Hero"
 import SecondBlock from "./components/SecondBlock"
 import ThirdBlock from "./components/ThirdBlock"
@@ -15,6 +16,8 @@ export default function Home() {
       <SecondBlock />
       <ThirdBlock />
       <FourthBlock />
+      <FifthBlock />
+      <FifthBlock />
     </main>
   )
 }

@@ -9,6 +9,7 @@ const MotionParent = ({children, className, variants}) => {
             initial="hide"
             whileInView="show"
             exit="hide"
+            viewport={{once: true}}
             variants={variants}
         >
             {children}
