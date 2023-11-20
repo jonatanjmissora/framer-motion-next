@@ -1,9 +1,10 @@
-import { MotionTrasition } from "./MotionTrasition"
-import { fadeInUp } from "../utils/transitions"
+import { revealHeader } from "../utils/variants"
+import MotionParent from "./MotionParent"
 
 const Header = () => {
   return (
-    <MotionTrasition variants={fadeInUp()}>
+    <MotionParent className={"header"} variants={revealHeader}>
+      <span>Logo</span>
       <nav className="nav">
         <ul className="nav-list">
           <li>Home</li>
@@ -11,7 +12,7 @@ const Header = () => {
           <li>Contact</li>
         </ul>
       </nav>
-    </MotionTrasition>
+    </MotionParent>
   )
 }
 

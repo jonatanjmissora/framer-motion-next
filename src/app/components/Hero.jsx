@@ -1,21 +1,27 @@
-import { fadeInLeft, fadeInRight } from "../utils/transitions"
-import { MotionTrasition } from "./MotionTrasition"
+import Image from "next/image"
+import { revealHeroFooter, revealFromBottom, revealHeroImage } from "../utils/variants"
+import MotionParent from "./MotionParent"
+import image from "../assets/hero.jpeg"
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="wrapper">
-
-      <MotionTrasition className={"left"} variants={fadeInLeft()}>
-        <div className="text-container">
-          <h2>Este es el Titulo</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reiciendis atque hic aliquid ex labore corporis cumque neque repellendus consequuntur?</p>
-        </div>
-      </MotionTrasition>
-      <MotionTrasition className="right" variants={fadeInRight()}>
-        <div className="image"></div>
-      </MotionTrasition>
-      </div>
+      <MotionParent  variants={revealHeroImage}>
+        <Image 
+        className="hero-foto"
+          src={image}
+          width="1400"
+          height="600"
+          alt="hero image"
+        />
+      </MotionParent>
+      <MotionParent className="title" variants={revealFromBottom}>
+          <h1>Punto Alem</h1>
+          <h3 className="subtitle">EVENTOS</h3>
+      </MotionParent>
+      <MotionParent className="hero-footer" variants={revealHeroFooter}>
+          <h4 className="subtitle">salon - cochera - living - aire libre</h4>
+      </MotionParent>
     </div>
   )
 }
