@@ -1,23 +1,22 @@
-import MotionParent from "./MotionParent"
-import {revealDescription, revealFromLeft} from "../utils/variants"
+import MotionParent2 from "./MotionParent2"
 
-const Descripcion = () => {
+const _03Descripcion = () => {
     return (
         <div className="descripcion">
-            <MotionParent className="item" variants={revealDescription(0)}>
+            <MotionParent2 className="item" options={{from: "bottom", delay: "0"}}>
                 <h2>Title 1</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, in nisi illo, soluta sed fugit, dignissimos suscipit eos repudiandae quasi dolor itaque reiciendis error ipsa incidunt. Voluptas possimus dignissimos magni?</p>
-            </MotionParent>
-            <MotionParent className="item" variants={revealDescription(0.25)}>
+            </MotionParent2>
+            <MotionParent2 className="item" options={{from: "bottom", delay: "0.25"}}>
                 <h2>Title 1</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, in nisi illo, soluta sed fugit, dignissimos suscipit eos repudiandae quasi dolor itaque reiciendis error ipsa incidunt. Voluptas possimus dignissimos magni?</p>
-            </MotionParent>
-            <MotionParent className="item" variants={revealDescription(0.5)}>
+            </MotionParent2>
+            <MotionParent2 className="item" options={{from: "bottom", delay: "0.5"}}>
                 <h2>Title 1</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, in nisi illo, soluta sed fugit, dignissimos suscipit eos repudiandae quasi dolor itaque reiciendis error ipsa incidunt. Voluptas possimus dignissimos magni?</p>
-            </MotionParent>
+            </MotionParent2>
         </div>
     )
 }
 
-export default Descripcion
+export default _03Descripcion

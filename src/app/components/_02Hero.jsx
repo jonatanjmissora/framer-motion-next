@@ -1,12 +1,11 @@
 import Image from "next/image"
-import { revealHeroFooter, revealFromBottom, revealHeroImage } from "../utils/variants"
-import MotionParent from "./MotionParent"
+import MotionParent2 from "./MotionParent2"
 import image from "../assets/hero.jpeg"
 
-const Hero = () => {
+const _02Hero = () => {
   return (
     <div className="hero-container">
-      <MotionParent  variants={revealHeroImage}>
+      <MotionParent2  options={{from: "none", amount:"0", delay: "0"}}>
         <Image 
         className="hero-foto"
           src={image}
@@ -14,16 +13,16 @@ const Hero = () => {
           height="600"
           alt="hero image"
         />
-      </MotionParent>
-      <MotionParent className="title" variants={revealFromBottom}>
+      </MotionParent2>
+      <MotionParent2 className="title" options={{from: "bottom", delay: "0"}}>
           <h1>Punto Alem</h1>
           <h3 className="subtitle">EVENTOS</h3>
-      </MotionParent>
-      <MotionParent className="hero-footer" variants={revealHeroFooter}>
+      </MotionParent2>
+      <MotionParent2 className="hero-footer" options={{from: "bottom", amount:"20", delay: "0.75"}}>
           <h4 className="subtitle">salon - cochera - living - aire libre</h4>
-      </MotionParent>
+      </MotionParent2>
     </div>
   )
 }
 
-export default Hero
+export default _02Hero

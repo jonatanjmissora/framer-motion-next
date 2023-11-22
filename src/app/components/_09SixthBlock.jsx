@@ -1,5 +1,5 @@
 import MotionParent2 from "./MotionParent2"
-const SixthBlock = () => {
+const _09SixthBlock = () => {
 
     return (
         <div className="sixth-block">
@@ -10,4 +10,4 @@ const SixthBlock = () => {
     )
 }
 
-export default SixthBlock;
+export default _09SixthBlock;

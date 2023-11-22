@@ -3,7 +3,7 @@ import { revealFromRight, revealFromLeft } from "../utils/variants"
 import MotionParent2 from "./MotionParent2"
 import image1 from "../assets/foto1.jpeg"
 
-const FirstBlock = () => {
+const _04FirstBlock = () => {
     return (
         <div className="first-block">
             <div className="wrapper">
@@ -40,4 +40,4 @@ const FirstBlock = () => {
     )
 }
 
-export default FirstBlock
+export default _04FirstBlock

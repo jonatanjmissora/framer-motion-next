@@ -4,7 +4,7 @@ import MotionParent from "./MotionParent"
 import MotionParent2 from "./MotionParent2"
 import image1 from "../assets/foto1.jpeg"
 
-const ThirdBlock = () => {
+const _06ThirdBlock = () => {
     return (
         <div className="first-block">
             <div className="wrapper">
@@ -42,4 +42,4 @@ const ThirdBlock = () => {
     )
 }
 
-export default ThirdBlock
+export default _06ThirdBlock
