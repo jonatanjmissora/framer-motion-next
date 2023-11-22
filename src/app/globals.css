@@ -152,6 +152,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid;
 }
 .item {
   width: 25vw;
@@ -305,3 +306,22 @@ p {
   object-position: center;
 }
 
+/*        SIXTH BLOCK      */
+.sixth-block {
+  min-height: 100vh;
+  background: rgb(196, 252, 196);
+  display: grid;
+  place-items: center;
+  position: relative;
+  border: 1px solid;
+}
+
+/*        SEVENTH BLOCK      */
+.seven-block {
+  min-height: 100vh;
+  background: rgb(196, 252, 196);
+  display: grid;
+  place-items: center;
+  position: relative;
+  border: 1px solid;
+}
